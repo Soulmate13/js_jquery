@@ -1,0 +1,2 @@
+"use strict";$(document).ready(function(){$("#circle").circleProgress({value:.63,size:74,fill:{gradient:["#0DDD9F","#01D5BB"]},emptyFill:"#787c9b",startAngle:29.8,thickness:4})}),$(document).ready(function(){$(".panel__nav-item").on("click",function(e){var i=$(this).find("a").attr("href");$(i).show().siblings().hide(),$(this).addClass("active-link").siblings().removeClass("active-link"),e.preventDefault()})});
+//# sourceMappingURL=script.js.map

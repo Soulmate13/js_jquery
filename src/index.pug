@@ -1,0 +1,89 @@
+include ./icons.svg
+
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet")
+        link(rel="stylesheet", href="./style/reset.css")
+        link(rel="stylesheet", href="./style/style.css")
+        title Far Cry 4
+    body
+        .background
+            .panel
+                ul.panel__nav
+                    li.panel__nav-item.active-link
+                        svg.panel__icon
+                            use(xlink:href="#tooltip")
+                        a.panel__nav-link(href="#tab-1") INFORMATION
+                    li.panel__nav-item
+                        svg.panel__icon
+                            use(xlink:href="#card")
+                        a.panel__nav-link(href="#tab-2") RATINGS INFO
+                    li.panel__nav-item
+                        svg.panel__icon
+                            use(xlink:href="#basket")
+                        a.panel__nav-link(href="#tab-3") WHERE TO BUY
+                .panel__body
+                    .panel__section.active-tab.panel__section-one(id="tab-1")
+                        .panel__section-top
+                            img.panel__img(src="./img/cover.png")
+                            .panel__info
+                                .panel__info-top
+                                    .panel__info-left
+                                        h2.panel__info-title FarCry 4
+                                        h3.panel__info-subtitle First Released Nov 17, 2014
+                                    .panel__info-right
+                                        .panel__circle#circle
+                                            .panel__grade 7.8
+                                .panel__info-bottom
+                                    p.panel__info-description In Far Cry 4, players find themselves in Kyrat, a breathtaking, perilous and wild region of the Hima layas struggling under the regime of a despotic self-appointed king.
+                        .panel__section-bottom
+                            .panel__stars
+                                fieldset.panel__stars-wrapper
+                                    input.panel__stars-input(id="star-rating-5" type="radio" name="rating" value="5")
+                                    label.panel__stars-icon.fas.fa-star(for="star-rating-5" title="5 out of 5 stars")
+                                    input.panel__stars-input(id="star-rating-4" type="radio" name="rating" value="4")
+                                    label.panel__stars-icon.fas.fa-star(for="star-rating-4" title="4 out of 5 stars")
+                                    input.panel__stars-input(id="star-rating-3" type="radio" name="rating" value="3")
+                                    label.panel__stars-icon.fas.fa-star(for="star-rating-3" title="3 out of 5 stars")
+                                    input.panel__stars-input(id="star-rating-2" type="radio" name="rating" value="2")
+                                    label.panel__stars-icon.fas.fa-star(for="star-rating-2" title="2 out of 5 stars")
+                                    input.panel__stars-input(id="star-rating-1" type="radio" name="rating" value="1")
+                                    label.panel__stars-icon.fas.fa-star(for="star-rating-1" title="1 out of 5 stars")
+                            .panel__price
+                                p.panel__price-discount 20% OFF!
+                                p.panel__price-amount $59.96
+                            .panel__btn-wrapper
+                                a.panel__btn(href="#") BUY IT NOW
+                    .panel__section.panel__section-two(id="tab-2") 
+                        ul
+                            li If you are looking for a solid open world game with a lot of stuff to do: GOOD! - 
+                                a(href="https://www.metacritic.com/user/mweagle" target="blank_") mweagle
+                            li The gameplay? It's fun, sure - 
+                                a(href="https://www.metacritic.com/user/Grindor" target="blank_") Grindor
+                            li Looks great, performs great. It's basically FarCry 3.5 though. - 
+                                a(href="https://www.metacritic.com/user/delukz" target="blank_") delukz
+                            li Far Cry 4 is straight up an absolutely amazing game. - 
+                                 a(href="https://www.metacritic.com/user/ClipState" target="blank_") ClipState
+                    .panel__section.panel__section-three(id="tab-3")
+                        ul
+                            li
+                                a(href="https://store.steampowered.com/app/298110/Far_Cry_4/" target="_blank") STEAM
+                            li
+                                a(href="https://www.ubisoft.com/ru-ru/game/far-cry-4" target="_blank") UPLAY
+                            li
+                                a(href="https://www.origin.com/rus/ru-ru/store/far-cry/far-cry-4" target="_blank") ORIGIN
+                            li
+                                a(href="https://www.microsoft.com/ru-ru/p/far-cry-4/" target="_blank") MICROSOFT STORE
+
+                    
+
+            
+        script(src="https://code.jquery.com/jquery-3.4.1.js")
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js")
+        script(src="./script/circle-progress.js")
+        script(src="https://kit.fontawesome.com/f811e9d5c2.js" crossorigin="anonymous")
+        script(src="./script/script.js")
